@@ -1,4 +1,6 @@
 import 'package:api_practace/homescreen.dart';
+import 'package:api_practace/objecttypeapi.dart';
+import 'package:api_practace/secondscreen.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -32,7 +34,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: HomeScreen(),
+      home:ObjectTypeApiScreen(),
     );
   }
 }

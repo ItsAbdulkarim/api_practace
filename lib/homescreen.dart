@@ -12,6 +12,7 @@ class HomeScreen extends StatefulWidget {
 }
 
 class _HomeScreenState extends State<HomeScreen> {
+  //also we can do like that
 //   List<dynamic> Dataa=[];
 //   Future<List> getData() async {
 //
@@ -29,7 +30,7 @@ class _HomeScreenState extends State<HomeScreen> {
 //
 //   }
 
-List<dynamic> myListt=[];
+
 
 Future<List?>getMySecondApi()async{
 
