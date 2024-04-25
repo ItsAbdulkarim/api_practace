@@ -31,20 +31,20 @@ class _HomeScreenState extends State<HomeScreen> {
 
 List<dynamic> myListt=[];
 
-Future<List>getMySecondApi()async{
+Future<List?>getMySecondApi()async{
 
   final response=await http.get(Uri.parse('https://jsonplaceholder.typicode.com/posts'));
 if(
 response.statusCode==200){
 
 
-  myListt=json.decode(response.body.toString());
-  return myListt;
+  return json.decode(response.body.toString());
+
 
 
 }else{
-  return myListt;
 
+return null;
 
 
 
@@ -70,9 +70,9 @@ response.statusCode==200){
          if(snapshot.hasData){
 
            return ListView.builder(
-             itemCount:  myListt.length,
+             itemCount:  snapshot.data!.length,
              itemBuilder: (context, index) {
-               var secondlist=myListt[index];
+               var secondlist=snapshot.data![index];
              return Column(
                mainAxisAlignment: MainAxisAlignment.start,
                crossAxisAlignment: CrossAxisAlignment.start,
