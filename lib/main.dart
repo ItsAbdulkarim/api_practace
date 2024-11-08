@@ -1,6 +1,7 @@
 import 'package:api_practace/homescreen.dart';
+import 'package:api_practace/withmodel/listmodelscreen.dart';
 import 'package:api_practace/objecttypeapi.dart';
-import 'package:api_practace/secondscreen.dart';
+import 'package:api_practace/listtypescreen.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -34,7 +35,11 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home:ObjectTypeApiScreen(),
+      home:Withlistandmodelscreen(
+
+
+
+      ),
     );
   }
 }
